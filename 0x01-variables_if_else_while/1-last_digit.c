@@ -11,16 +11,17 @@ int main(void)
 {
 	int n;
 
-	char * a = "Last digit of";
+	int lastdigi;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 5)
-		printf("%s %d and is greather than 5\n", a, n);
-	if (n == 0)
-		printf("%s %d and is 0\n", a, n);
-	if (n < 6 && n != 0)
-		printf("%s %d and is less than 6 and not 0\n", a, n);
+	lastdigi = n % 10;
+	if (lastdigi > 5)
+		printf("Last digit of %d is %d and is greather than 5\n", n, lastdigi);
+	if (lastdigi == 0)
+		printf("Last digit of %d is %d and is 0\n", n, lastdigi);
+	if (lastdigi < 6 && lastdigi != 0)
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastdigi);
 	return (0);
 
 }
