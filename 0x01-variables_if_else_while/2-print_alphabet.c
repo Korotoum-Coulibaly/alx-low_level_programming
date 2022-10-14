@@ -15,7 +15,7 @@ int main(void)
 
 	c = 'a';
 	ligne = '\n';
-	while (c < 'z')
+	while (c <= 'z')
 	{
 		putchar (c);
 		c++;
