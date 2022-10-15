@@ -20,7 +20,7 @@ int main(void)
 		if (c < 10)
 			putchar ('0' + c);
 		if (c >= 10 && c <= 15)
-			putchar ((c - 10)["ABCDEF"]);
+			putchar ((c - 10)["abcdef"]);
 		c++;
 	}
 	putchar (ligne);
