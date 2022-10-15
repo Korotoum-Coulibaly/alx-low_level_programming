@@ -9,20 +9,20 @@
  */
 int main(void)
 {
-	int firstnumber, secondnumber, thirdnumber;
+	int first, second, third;
 
-	for (firstnumber = 0; firstnumber < 8 ; firstnumber++)
+	for (first = 0; first < 8 ; first++)
 	{
-		for (secondnumber = 1; secondnumber < 9; secondnumber++)
+		for (second = 1; second < 9; second++)
 		{
-			for (thirdnumber = 2; thirdnumber <= 9; thirdnumber++)
+			for (third = 2; third <= 9; third++)
 			{
-				if (firstnumber < secondnumber && secondnumber < thirdnumber && (firstnumber != secondnumber) != thirdnumber)
+				if (first < second && second < third && (first != second) != third)
 				{
-					putchar ('0' + firstnumber);
-					putchar ('0' + secondnumber);
-					putchar ('0' + thirdnumber);
-					if (firstnumber != 7 || secondnumber != 8 || thirdnumber != 9)
+					putchar ('0' + first);
+					putchar ('0' + second);
+					putchar ('0' + third);
+					if (first != 7 || second != 8 || third != 9)
 					{
 						putchar (',');
 						putchar (' ');
