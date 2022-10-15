@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (thirdnumber = 2; thirdnumber <= 9; thirdnumber++)
 			{
-				if (firstnumber < thirdnumber && thirdnumber > secondnumber && (firstnumber != secondnumber) != thirdnumber)
+				if (firstnumber < secondnumber < thirdnumber && (firstnumber != secondnumber) != thirdnumber)
 				{
 					putchar ('0' + firstnumber);
 					putchar ('0' + secondnumber);
@@ -28,7 +28,7 @@ int main(void)
 						putchar (' ');
 					}
 				}
-			}	
+			}
 		}
 	}
 	putchar ('\n');
