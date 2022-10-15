@@ -11,10 +11,8 @@
 int main(void)
 {
 	int numero;
-	char ligne;
 
 	numero = 0;
-	ligne = '\n';
 	while (numero <= 9)
 	{
 		putchar ('0' + numero);
@@ -25,6 +23,6 @@ int main(void)
 		}
 		numero++;
 	}
-	putchar (ligne);
+	putchar ('\n');
 	return (0);
 }
