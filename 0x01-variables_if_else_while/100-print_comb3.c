@@ -7,7 +7,6 @@
  *
  *Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int firstnumber, secondnumber;
@@ -16,7 +15,7 @@ int main(void)
 	{
 		for (secondnumber = 1; secondnumber <= 9; secondnumber++)
 		{
-			if (firstnumber < secondnumber && firstnumber != secondnumber )
+			if (firstnumber < secondnumber && firstnumber != secondnumber)
 			{
 				putchar ('0' + firstnumber);
 				putchar ('0' + secondnumber);
