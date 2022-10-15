@@ -12,30 +12,21 @@ int main(void)
 {
 	int firstnumber, secondnumber;
 
-	/*
-	 * firstnumber = 0;
-	 */
-
-	secondnumber = 1;
 	for (firstnumber = 0; firstnumber < 9 ; firstnumber++)
 	{
-		while (secondnumber <= 9)
+		for (secondnumber = 1; secondnumber <= 9; secondnumber++)
 		{
 			if (firstnumber < secondnumber && firstnumber != secondnumber )
 			{
 				putchar ('0' + firstnumber);
 				putchar ('0' + secondnumber);
-				if (firstnumber != 8 && secondnumber != 9)
+				if (firstnumber != 8 || secondnumber != 9)
 				{
 					putchar (',');
 					putchar (' ');
 				}
 			}
-			secondnumber++;
 		}
-		/*
-		 *firstnumber++;
-		 */	 
 	}
 	putchar ('\n');
 	return (0);
