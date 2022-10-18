@@ -1,6 +1,7 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  *print_alphabet - This function print alphabet in lowercase
@@ -30,4 +31,19 @@ void print_alphabet_x10(void)
 		putchar ('\n');
 	}
 }
+
+/**
+ * _islower - This function that checks for lowercase character
+ * @c: is the information that checks
+ *
+ * Return: 1 if c is lowercase and 0 otherwise
+ */
+int _islower(int c)
+{
+	if (islower(c))
+		return (1);
+	else
+		return (0);
+}
+
 #endif /* _MAIN_H_ */
