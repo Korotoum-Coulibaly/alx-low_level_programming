@@ -51,10 +51,11 @@ int _islower(int c)
  * @v: is the information that print
  *
  * Return: 0 (Success)
- */
-int _putchar(int v)
-{
-	putchar (v);
-	return (0);
-}
+ *
+*int _putchar(int v)
+{*
+*	putchar (v);
+*	return (0);
+*}
+*/
 #endif /* _MAIN_H_ */
