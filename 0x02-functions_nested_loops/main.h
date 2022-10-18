@@ -17,8 +17,8 @@ void print_alphabet(void)
 }
 
 /**
- * print_alphabet_x10 - this function prints 10 times
- *  the alphabet,in lowercase,followed by a new line
+ *print_alphabet_x10 - this function prints 10 times
+ *the alphabet,in lowercase,followed by a new line
  */
 void print_alphabet_x10(void)
 {
@@ -34,10 +34,10 @@ void print_alphabet_x10(void)
 }
 
 /**
- * _islower - This function that checks for lowercase character
- * @c: is the information that checks
+ *_islower - This function that checks for lowercase character
+ *@c: is the information that checks
  *
- * Return: 1 if c is lowercase and 0 otherwise
+ *Return: 1 if c is lowercase and 0 otherwise
  */
 int _islower(int c)
 {
@@ -48,11 +48,11 @@ int _islower(int c)
 }
 
 /**
- * _isalpha - checks alphabetic character
- * @c: is the information that checks
+ *_isalpha - checks alphabetic character
+ *@c: is the information that checks
  *
- * Return: 1 if c is a letter,lowercase or uppercase
- * 0 otherwise
+ *Return: 1 if c is a letter,lowercase or uppercase
+ *0 otherwise
  */
 int _isalpha(int c)
 {
@@ -60,6 +60,33 @@ int _isalpha(int c)
 		return (1);
 	else
 		return (0);
+}
+
+/**
+ *print_sign - That prints the sign of a number
+ *@n: information that checks
+ *
+ *Return: 1 if n is greater than zero
+ *0 if n is a zero
+ *-1 if n is less than zero
+ */
+int print_sign(int n)
+{
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else if (n < 0)
+	{
+		_putchar('-1');
+		return (-1);
+	}
 }
 
 #endif /* _MAIN_H_ */
