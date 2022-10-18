@@ -46,16 +46,4 @@ int _islower(int c)
 		return (0);
 }
 
-/**
- * _putchar - This function has a same function that putchar
- * @v: is the information that print
- *
- * Return: 0 (Success)
- *
-*int _putchar(int v)
-{*
-*	putchar (v);
-*	return (0);
-*}
-*/
 #endif /* _MAIN_H_ */
