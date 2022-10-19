@@ -234,7 +234,7 @@ void print_to_98(int n)
 
 	for (p = n; p <= 98; p++)
 	{
-		if (p > 9)
+		if (p > 9 && p < 98)
 		{
 			_putchar ('0' + p / 10);
 			_putchar ('0' + p % 10);
