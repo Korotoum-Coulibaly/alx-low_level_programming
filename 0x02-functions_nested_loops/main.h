@@ -311,7 +311,7 @@ void print_times_table(int n)
 					_putchar (' ');
 					_putchar ('0' + result);
 				}
-				if (result > 9 )
+				if (result > 9 && result < 100)
 				{
 					_putchar (',');
 					_putchar (' ');
