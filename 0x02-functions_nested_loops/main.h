@@ -102,17 +102,17 @@ int _abs(int n)
 {
 	if (n < 0)
 	{
-		n = -n ;
-		return n;
+		n = -n;
+		return (n);
 	}
 	else
-		return n;
+		return (n);
 	return (0);
 }
 
 /**
  *print_last_digit - That prints the last digit of a number
- *@n:number that print in the last digit
+ *@n: number that print in the last digit
  *
  *Return: Always 0 (Success)
  */
@@ -126,6 +126,33 @@ int print_last_digit(int n)
 		return (n);
 	}
 	return (0);
+}
+
+/**
+ *jack_bauer - That prints every minute of the day of Jack Bauer
+ */
+void jack_bauer(void)
+{
+	int a, b, c, d;
+
+	for (a = 0; a <= 2; a++)
+	{
+		for (b = 0; b <= 3; b++)
+		{
+			for (c = 0; c <= 5; c++)
+			{
+				for (d = 0; d <= 9; d++)
+				{
+					putchar ('0' + a);
+					putchar ('0' + b);
+					putchar (':');
+					putchar ('0' + c);
+					putchar ('0' + d);
+					putchar ('\n');
+				}
+			}
+		}
+	}
 }
 
 #endif /* _MAIN_H_ */
