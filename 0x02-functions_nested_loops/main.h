@@ -118,13 +118,8 @@ int _abs(int n)
  */
 int print_last_digit(int n)
 {
-	int i;
-
-	for (i = 0; i <= 2; i++)
-	{
-		n = n % 10;
-	}
-	return (0);
+	n = n % 10;
+	return (n);
 }
 
 /**
