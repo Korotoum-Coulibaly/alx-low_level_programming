@@ -234,7 +234,7 @@ void print_to_98(int n)
 
 	for (p = n; p <= 98; p++)
 	{
-		if (p > 9 && p < 98)
+		if (p > 9)
 		{
 			_putchar ('0' + p / 10);
 			_putchar ('0' + p % 10);
@@ -260,23 +260,26 @@ void print_to_98(int n)
 			_putchar ('0' + p % 10);
 		}
 	}
-	for (p = n; p >= 98; p--)
+	if (p > n)
 	{
-		if (p > 99)
+		for (p = n; p >= 98; p--)
 		{
-			_putchar ('0' + p / 100);
-			_putchar ('0' + (p / 10) % 10);
-			_putchar ('0' + p % 10);
-		}
-		if (p <= 99)
-		{
-			_putchar ('0' + p / 10);
-			_putchar ('0' + p % 10);
-		}
-		if (p != 98)
-		{
-			_putchar (',');
-			_putchar (' ');
+			if (p > 99)
+			{
+				_putchar ('0' + p / 100);
+				_putchar ('0' + (p / 10) % 10);
+				_putchar ('0' + p % 10);
+			}
+			if (p <= 99)
+			{
+				_putchar ('0' + p / 10);
+				_putchar ('0' + p % 10);
+			}
+			if (p != 98)
+			{
+				_putchar (',');
+				_putchar (' ');
+			}
 		}
 	}
 	_putchar ('\n');
