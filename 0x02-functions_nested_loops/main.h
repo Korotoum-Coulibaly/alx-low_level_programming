@@ -114,13 +114,14 @@ int _abs(int n)
  *print_last_digit - That prints the last digit of a number
  *@n: number that print in the last digit
  *
- *Return: Always 0 (Success)
+ *Return: value of digit
  */
 int print_last_digit(int n)
 {
 	if (n < 0)
 	{
 		n = (-n) % 10;
+		n = -n;
 	}
 	if (n > 0) 
 		n = n % 10;
