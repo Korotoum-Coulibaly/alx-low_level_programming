@@ -260,7 +260,7 @@ void print_to_98(int n)
 			_putchar ('0' + p % 10);
 		}
 	}
-	if (p > n)
+	if (n > 99)
 	{
 		for (p = n; p >= 98; p--)
 		{
