@@ -100,7 +100,7 @@ int print_sign(int n)
 int _abs(int n)
 {
 	if (n < 0)
-		n = -n;
+		n = (-1) * n;
 	if (n >= 0)
 		n = n;
 	return (0);
