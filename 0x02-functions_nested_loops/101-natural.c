@@ -9,8 +9,8 @@
 int main(void)
 {
 	int count, sum;
-	
 	sum = 0;
+
 	for (count = 0; count < 1024; count++)
 	{
 		if ((count % 3) == 0 || (count % 5) == 0)
@@ -18,6 +18,6 @@ int main(void)
 			sum = sum + count;
 		}
 	}
-	printf ("%d \n",sum);
+	printf("%d\n", sum);
 	return (0);
 }
