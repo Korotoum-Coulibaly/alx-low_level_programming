@@ -182,12 +182,11 @@ void jack_bauer(void)
  */
 void times_table(void)
 {
-	int a, b, result;
+	int a, b;
 	for (a = 0; a <= 9; a++)
 	{
 		for (b = 0; b <= 9; b++)
 		{
-			result = a * b;
 			_putchar ('0' + (a * b));
 			if (b != 9)
 			{
