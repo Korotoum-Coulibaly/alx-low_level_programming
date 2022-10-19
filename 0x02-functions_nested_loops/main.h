@@ -223,4 +223,23 @@ int add(int n,int m)
 	result = n + m;
 	return (result);
 }
+
+/**
+ * print_to_98 - that prints all natural numbers from n to 98
+ * @n: first number
+ */
+void print_to_98(int n)
+{
+	int p;
+
+	for (p = n; p <= 98; p++)
+	{
+		_putchar ('0' + p);
+		if (p != 98)
+		{
+			_putchar (',');
+			_putchar (' ');
+		}
+	}
+}
 #endif /* _MAIN_H_ */
