@@ -251,7 +251,7 @@ void print_to_98(int n)
 		}
 		if (p < -99)
 		{
-			_putchar ('0' + -(-p) / 100);
+			_putchar ('0' + (-p) / 100);
 			_putchar ('0' + ((-p) / 10) % 10);
 			_putchar ('0' + (-p) % 10);
 		}
@@ -284,5 +284,43 @@ void print_to_98(int n)
 		}
 	}
 	_putchar ('\n');
+}
+/**
+ * print_times_table - that prints the n times table,starting with 0
+ * @n - number of loop
+ *
+ * Return: 0
+ */
+void print_times_table(int n);
+{
+	int a, b, result;
+	if (n < 15 && n > 0)
+	{
+		for (a = 0; a <= n; a++)
+		{
+			for (b = 0; b <= n; b++)
+			{
+				result = a * b;
+				if (b == 0)
+					_putchar ('0');
+				if (b != 0 && result < 10)
+				{
+					_putchar (',');
+					_putchar (' ');
+					_putchar (' ');
+					_putchar ('0' + result);
+				}
+				if (result > 9 )
+				{
+					_putchar (',');
+					_putchar (' ');
+					_putchar ('0' + result / 10);
+					_putchar ('0' + result % 10);
+				}
+			}
+			_putchar ('\n');
+		}
+	}
+	return (0);
 }
 #endif /* _MAIN_H_ */
