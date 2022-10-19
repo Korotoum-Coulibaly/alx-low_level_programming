@@ -19,15 +19,15 @@ int main(void)
 			putchar ('0' + i);
 		if (count == 2)
 			putchar ('0' + j);
-		if (count != 1 && count != 2)
+		if (count != 1 || count != 2)
 		{
 			m = i + j;
+			putchar (',');
+			putchar (' ');
 			printf("%d", m);
 			i = j;
 			j = m;
 		}
-		putchar (',');
-		putchar (' ');
 	}
 	printf("\n");
 	return (0);
