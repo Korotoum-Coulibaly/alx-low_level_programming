@@ -188,11 +188,12 @@ void times_table(void)
 		for (b = 0; b <= 9; b++)
 		{
 			result = a * b;
-			_putchar ('0' + result);
-			if (b != 9 && result < 9)
+			if (b != 9 && result < 10)
 			{
 				_putchar (',');
 				_putchar (' ');
+				_putchar (' ');
+				_putchar ('0' + result);
 			}
 			if (result > 9 && b != 9)
 			{
