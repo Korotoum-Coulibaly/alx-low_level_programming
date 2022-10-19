@@ -143,7 +143,7 @@ void jack_bauer(void)
 			{
 				for (d = 0; d <= 9; d++)
 				{
-					if (a == 2 && b == 3 && c == 5 && d == 9)
+					if (a == 2 || b == 3 || c == 5 || d == 9)
 						break;
 					putchar ('0' + a);
 					putchar ('0' + b);
