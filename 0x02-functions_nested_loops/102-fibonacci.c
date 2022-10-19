@@ -16,9 +16,9 @@ int main(void)
 	for (count = 1; count <= 50; count++)
 	{
 		if (count == 1)
-			_putchar (i);
+			putchar ('0' + i);
 		if (count == 2)
-			_putchar (j);
+			putchar ('0' + j);
 		if (count != 1 && count != 2)
 		{
 			m = i + j;
@@ -26,6 +26,8 @@ int main(void)
 			i = j;
 			j = m;
 		}
+		putchar (',');
+		putchar (' ');
 	}
 	printf("\n");
 	return (0);
