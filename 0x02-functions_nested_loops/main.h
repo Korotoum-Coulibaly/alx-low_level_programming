@@ -94,15 +94,19 @@ int print_sign(int n)
 /**
  * _abs - that computes the absolute value of an integer
  * @n: number that computes
+ * @a: change negatif to positif
  *
  * Return: Always 0 (Success)
  */
 int _abs(int n)
 {
 	if (n < 0)
-		n = (-1) * n;
-	if (n >= 0)
-		n = n;
+	{
+		n = -n ;
+		return n;
+	}
+	else
+		return n;
 	return (0);
 }
 #endif /* _MAIN_H_ */
