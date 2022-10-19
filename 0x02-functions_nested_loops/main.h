@@ -190,12 +190,11 @@ void times_table(void)
 			result = a * b;
 			if (b != 9 && result < 10)
 			{
+				_putchar ('0' + result);
 				_putchar (',');
 				_putchar (' ');
-				_putchar (' ');
-				_putchar ('0' + result);
 			}
-			if (result > 9 && b != 9)
+			if (result > 9)
 			{
 				_putchar (',');
 				_putchar (' ');
