@@ -249,6 +249,17 @@ void print_to_98(int n)
 			_putchar (' ');
 		}
 	}
+	for (p = n; p >= 98; p--)
+	{
+		_putchar ('0' + p / 100);
+		_putchar ('0' + p / 10);
+		_putchar ('0' + p % 10);
+		if (p != 98)
+		{
+			_putchar (',');
+			_putchar (' ');
+		}
+	}
 	_putchar ('\n');
 }
 #endif /* _MAIN_H_ */
