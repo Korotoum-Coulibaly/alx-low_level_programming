@@ -123,7 +123,6 @@ int print_last_digit(int n)
 	for (i = 0; i <= 2; i++)
 	{
 		n = n % 10;
-		return ('0' + n);
 	}
 	return (0);
 }
