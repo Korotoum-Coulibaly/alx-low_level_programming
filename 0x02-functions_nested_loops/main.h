@@ -109,4 +109,19 @@ int _abs(int n)
 		return n;
 	return (0);
 }
+
+/**
+ *print_last_digit - That prints the last digit of a number
+ *@n:number that print in the last digit
+ *
+ *Return: Always 0 (Success)
+ */
+int print_last_digit(int n)
+{
+	int result;
+
+	result = n % 10;
+	return (result);
+}
+
 #endif /* _MAIN_H_ */
