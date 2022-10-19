@@ -240,13 +240,8 @@ void print_to_98(int n)
 			_putchar ('0' + p / 10);
 			_putchar ('0' + p % 10);
 		}
-		if (p < 10 && p != 0)
+		if (p < 10 && p != 0 && p > -10)
 			_putchar ('0' + p);
-		if (p < 0 && p > -10)
-		{
-			p = -p;
-			_putchar ('0' + p);
-		}
 		if (p == 0)
 			_putchar ('0');
 		if (p != 98)
