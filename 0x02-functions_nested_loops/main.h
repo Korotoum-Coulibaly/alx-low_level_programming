@@ -251,7 +251,7 @@ void print_to_98(int n)
 		}
 		if (p < -99)
 		{
-			_putchar ('0' + (-p) / 100);
+			_putchar ('0' + -(-p) / 100);
 			_putchar ('0' + ((-p) / 10) % 10);
 			_putchar ('0' + (-p) % 10);
 		}
