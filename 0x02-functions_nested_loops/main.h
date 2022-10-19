@@ -251,8 +251,8 @@ void print_to_98(int n)
 	}
 	for (p = n; p > 98; p--)
 	{
+		_putchar ('0' + p / 20);
 		_putchar ('0' + p / 10);
-		_putchar ('0' + p / 100);
 		_putchar ('0' + p % 10);
 		if (p != 98)
 		{
