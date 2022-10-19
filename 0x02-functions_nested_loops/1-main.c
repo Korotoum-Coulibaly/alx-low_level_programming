@@ -9,7 +9,7 @@ int main(void)
 {
 	int r;
 
-	r = _abs(-1);
+	r = print_last_digit(-102);
 	printf("%d\n", r);
 	r = _abs(-98);
 	_putchar(r + '0');
