@@ -294,7 +294,7 @@ void print_to_98(int n)
 void print_times_table(int n)
 {
 	int a, b, result;
-	if (n < 15 && n > 0)
+	if (n < 15 && n >= 0)
 	{
 		for (a = 0; a <= n; a++)
 		{
