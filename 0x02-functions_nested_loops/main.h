@@ -2,6 +2,7 @@
 #define _MAIN_H_
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 /**
@@ -90,4 +91,18 @@ int print_sign(int n)
 	return (0);
 }
 
+/**
+ * _abs - that computes the absolute value of an integer
+ * @n: number that computes
+ *
+ * Return: Always 0 (Success)
+ */
+int _abs(int n)
+{
+	if (n < 0)
+		n = -n;
+	if (n >= 0)
+		n = n;
+	return (0);
+}
 #endif /* _MAIN_H_ */
