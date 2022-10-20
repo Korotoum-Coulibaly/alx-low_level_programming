@@ -1,0 +1,1 @@
+Debugging is the process of finding errors in software that prevents it from running correctly.As you become a more advanced programmer and an industry engineer,you will lear how to use debugging tools such as gbd or built in tools that IDEs have.However,it's important to understand the concepts and process of debugging manually.
