@@ -11,9 +11,9 @@ int main(void)
 	int a, b, c;
 	int largest;
 
-	a = 972;
+	a = 72;
 	b = 398;
-	c = 0;
+	c = 700;
 	largest = largest_number(a, b, c);
 	printf("%d is the largest number\n", largest);
 
