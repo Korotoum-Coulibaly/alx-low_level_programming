@@ -13,9 +13,9 @@ void rev_string(char *s)
 	a = 0;
 	for (i = n - 1; i >= 0; i--, a++)
 	{
-		sauvegarde = s[i];
-		s[i] = s[a];
-		s[a] = sauvegarde;
+		sauvegarde = s[a];
+		s[a] = s[i];
+		s[i] = sauvegarde;
 	}
 	_putchar('\n');
 }
