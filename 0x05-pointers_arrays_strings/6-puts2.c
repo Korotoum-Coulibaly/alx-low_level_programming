@@ -7,10 +7,9 @@
  */
 void puts2(char *str)
 {
-	int data, n;
+	int data;
 
-	n = strlen(data);
-	for (data = 0; data < n; data++)
+	for (data = 0; str[data] != '\0'; data++)
 		if (data % 2 == 0)
 			_putchar(str[data]);
 	_putchar('\n');
