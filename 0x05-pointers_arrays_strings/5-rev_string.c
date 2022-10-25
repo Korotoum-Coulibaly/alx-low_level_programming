@@ -10,8 +10,8 @@ void rev_string(char *s)
 	char sauvegarde;
 
 	n = strlen(s);
-	a = n - 2;
-	for (i = 0; a >= 0 && i < a; i++, a--)
+	a = n - 1;
+	for (i = 0; a > 0 && i < a; i++, a--)
 	{
 		sauvegarde = s[i];
 		s[i] = s[a];
