@@ -8,12 +8,9 @@
  */
 int main(void)
 {
-	int a, b;
+        char *b;
 
-	a = 98;
-	b = 42;
-	printf("a=%d\n, b=%d\n", a, b);
-	b = _strlen("My first strlen!");
-	printf("b=%d\n",b );
+	b = "My first strlen!";
+	_puts(b);
 	return (0);
 }
