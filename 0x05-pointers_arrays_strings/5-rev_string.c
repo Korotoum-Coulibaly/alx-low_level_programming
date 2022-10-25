@@ -11,7 +11,7 @@ void rev_string(char *s)
 
 	n = strlen(s);
 	a = 0;
-	for (i = n - 1; i > 0; i--)
+	for (i = 0; i < n; i++)
 	{
 		sauvegarde = s[a];
 		s[a] = s[i];
