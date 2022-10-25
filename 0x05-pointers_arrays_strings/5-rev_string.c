@@ -10,13 +10,13 @@ void rev_string(char *s)
 	char sauvegarde;
 
 	n = strlen(s);
-	a = 0;
+	a = n;
 	for (i = 0; i < n; i++)
 	{
-		sauvegarde = s[a];
-		s[a] = s[i];
-		s[i] = sauvegarde;
-		a = a + 1;
+		sauvegarde = s[i];
+		s[i] = s[a];
+		s[a] = sauvegarde;
+		a = a - 1;
 	}
 	_putchar('\n');
 }
