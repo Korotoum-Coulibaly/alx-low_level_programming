@@ -3,11 +3,20 @@
 /**
  * string_toupper - that changes all lowercase letters
  * of a string to uppercase
- *@'': information that upper
+ *@t: information that upper
  *
  * Return: 0
  */
-char *string_toupper(char *)
+char *string_toupper(char * t)
 {
-	return (0);
+	int i;
+
+	i = 0;
+	while (*(t + 1))
+	{
+		if (*(t + i) >= 'a' && *(t + i) <= 'z')
+			*(t + i) -= 'a' - 'A';
+		i++;
+	}
+	return (t);
 }

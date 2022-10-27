@@ -2,11 +2,23 @@
 
 /**
  * leet - that encodes a string into 1337
- *@ :space string
+ *@l:space string
  *
- *Return: 0
+ *Return: l
  */
-char *leet(char *)
+char *leet(char *l)
 {
-	return (0);
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
+
+	for (i = 0; *(s + i); i++)
+	{
+		for (i = 0; *(s + i); i++)
+		{
+			if (a[j] == s[i])
+				s[i] == s[i]
+		}
+	}
+	return (l);
 }
