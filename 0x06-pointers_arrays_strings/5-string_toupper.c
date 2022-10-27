@@ -7,12 +7,12 @@
  *
  * Return: 0
  */
-char *string_toupper(char * t)
+char *string_toupper(char *t)
 {
 	int i;
 
 	i = 0;
-	while (*(t + 1))
+	while (*(t + i))
 	{
 		if (*(t + i) >= 'a' && *(t + i) <= 'z')
 			*(t + i) -= 'a' - 'A';
