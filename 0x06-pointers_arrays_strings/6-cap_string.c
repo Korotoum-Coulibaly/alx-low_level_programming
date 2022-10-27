@@ -11,18 +11,18 @@ char *cap_string(char *c)
 	int i = 0, j;
 	char a[] = " \t\n,;.!?\"(){}";
 
-	while (*(s + 1))
+	while (*(c + 1))
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		if (*(c + i) >= 'a' && *(c + i) <= 'z')
 		{
 			if (i == 0)
-				*(s + i) -= 'a' - 'A';
+				*(c + i) -= 'a' - 'A';
 			else
 			{
 				for (j = 0; j <= 12; j++)
 				{
-					if (a[j] == *(s + i - 1))
-						*(s + i) -= 'a' - 'A';
+					if (a[j] == *(c + i - 1))
+						*(c + i) -= 'a' - 'A';
 				}
 			}
 		}

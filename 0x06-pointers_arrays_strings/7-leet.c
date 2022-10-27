@@ -12,12 +12,12 @@ char *leet(char *l)
 	char a[] = "aAeEoOtTlL";
 	char b[] = "4433007711";
 
-	for (i = 0; *(s + i); i++)
+	for (i = 0; *(l + i); i++)
 	{
-		for (i = 0; *(s + i); i++)
+		for (j = 0; j <= 9; j++)
 		{
-			if (a[j] == s[i])
-				s[i] == s[i]
+			if (a[j] == l[i])
+				l[i] == b[j];
 		}
 	}
 	return (l);
