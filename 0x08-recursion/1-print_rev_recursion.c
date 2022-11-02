@@ -6,17 +6,14 @@
  */
 void _print_rev_recursion(char *s)
 {
-	
-	char *compteur;
 
 	if (*s)
 	{
 		_print_rev_recursion(s + 1);
-		compteur = s + 1;
 	}
 	else
 	{	_putchar(*s);
-		_print_rev_recursion(compteur - 1);
+		_print_rev_recursion(s - 1);
 		_putchar('\n');
 	}
 }
