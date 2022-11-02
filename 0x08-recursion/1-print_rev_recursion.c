@@ -7,7 +7,7 @@
 void _print_rev_recursion(char *s)
 {
 	
-	int compteur;
+	char *compteur;
 
 	if (*s)
 	{
