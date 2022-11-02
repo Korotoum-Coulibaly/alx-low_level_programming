@@ -11,6 +11,6 @@ void _puts_recursion(char *s)
 	size = strlen(s);
 	_putchar(s[size]);
 	size--;
-	if ( i != 0)
+	if ( size != 0)
 		_puts_recursion(s);
 }
