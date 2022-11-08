@@ -1,8 +1,8 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strdup - function that returns a pointer to a newly allocated 
- * space in memory, which contains a copy of the string as a 
+ * _strdup - function that returns a pointer to a newly allocated
+ * space in memory, which contains a copy of the string as a
  * parameter
  * @str: string
  *
@@ -14,14 +14,15 @@ char *_strdup(char *str)
 	unsigned int i;
 	unsigned int size;
 
-	size = strlen(str) + 1;
-	memory = (char *) malloc(sizeof(char) * size);
-	
 	if (str == NULL)
 		memory = NULL;
 	else
+	{
+		size = strlen(str) + 1;
+		memory = (char *) malloc(sizeof(char) * size);
+	
 		for (i = 0 ; i < size; i++)
 			*(memory + i) = *(str + i);
-
+	}
 	return (memory);
 }
