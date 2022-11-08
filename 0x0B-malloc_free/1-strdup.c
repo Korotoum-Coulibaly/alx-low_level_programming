@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * _strdup - function that returns a pointer to a newly allocated 
  * space in memory, which contains a copy of the string as a 
@@ -10,10 +10,15 @@
  */
 char *_strdup(char *str)
 {
-	char *memory = malloc(sizeof(char) * 100);
-	
-	for (i = 0 ; i < 100; i++)
-		*memory = *str;
+	char *memory = NULL;
+	unsigned int i;
+	unsigned int size;
+
+	size = strlen(str);
+	memory = (char *) malloc(sizeof(char) * size);
+
+	for (i = 0 ; i < size; i++)
+		*(memory + i) = *(str + i);
 
 	return (memory);
 }
