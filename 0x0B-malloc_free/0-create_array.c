@@ -22,8 +22,5 @@ char *create_array(unsigned int size, char c)
 			*(memory  + i) = c;
 		}
 	}
-	if (memory == NULL)
-		return NULL;
-
 	return (memory);
 }
