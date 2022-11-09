@@ -10,14 +10,14 @@
 int **alloc_grid(int width,int height)
 {
 
-	char *memory;
+	int **memory;
 	int i, j;
 
 	for (i = 0; i < width; i++)
 	{
 		for (j = 0; j < height; j++)
 		{
-			memory = (char *) malloc(sizeof(char) * (width * height));
+			memory = (int **) malloc(sizeof(int) * (width * height));
 			*(memory + ((i * width) * j)) = 0;
 		}
 	}
