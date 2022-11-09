@@ -16,7 +16,6 @@ char *str_concat(char *s1, char *s2)
 	char *memory = NULL;
 	unsigned int i, j;
 
-	
 	sizeS1 = strlen(s1);
 	sizeS2 = strlen(s2);
 	size = sizeS1 + sizeS2 + 1;
@@ -28,15 +27,15 @@ char *str_concat(char *s1, char *s2)
 	}
 	else if (s2 == NULL)
 	{
-		 for (i = 0; i < sizeS1; i++)
-			 *(memory + i) = *(s1 + i);
+		for (i = 0; i < sizeS1; i++)
+			*(memory + i) = *(s1 + i);
 	}
 	else
 	{
 		memory = (char *) malloc(sizeof(char) * size);
 
 		for (i = 0; i < sizeS1; i++)
-			*(memory + i ) = *(s1 + i);
+			*(memory + i) = *(s1 + i);
 		i = 0;
 		for (j = sizeS1; j < size; j++)
 		{
