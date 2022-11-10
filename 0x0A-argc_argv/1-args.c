@@ -1,0 +1,16 @@
+#include "main.h"
+
+/**
+ *main - program that prints the number of arguments passed into it
+ *@argc: argument number
+ *@argv: value of arguments
+ *
+ * Return: 0
+ */
+int main(int argc, char **argv)
+{
+	(void)argv;
+
+	printf("%d\n", argc);
+	return (0);
+}
