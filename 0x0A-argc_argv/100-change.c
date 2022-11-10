@@ -7,7 +7,7 @@
  *
  *Return 0
  */
-int main'int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int total, count;
 	unsigned int i;
@@ -32,7 +32,7 @@ int main'int argc, char **argv)
 				if (total >= cents[i])
 				{
 					count += total / cents[i];
-					total = total % cents[i]
+					total = total % cents[i];
 				}
 			}
 		}
