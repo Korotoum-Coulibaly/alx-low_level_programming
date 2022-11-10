@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * main - program that adds possible positive numbers
@@ -9,16 +10,25 @@
  */
 int main(int argc, char **argv)
 {
-	int i, result;
+	int i, result, a;
 
-	for (i = 0; i < argc; i++)
+	result = 0;
+	for (i = 1; i < argc; i++)
 	{
-		if ( *(argv + i))
+		/*a = atoi(*(argv + i));*/
+		/*printf("%d\n", a);*/
+		if (isalpha(a) != 0)
 		{
-			printf("Error");
+			printf("Error\n");
 			return (1);
 		}
+		else
+		{
+			a = atoi(*(argv + i));
+			result = result + a;
+		}
 	}
+	printf("%d\n", result);
 	return (0);
 }
 
