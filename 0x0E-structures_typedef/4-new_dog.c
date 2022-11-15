@@ -12,7 +12,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i;
+	/*int i;*/
 	dog_t *my_dog;
 
 	/*gestion d'erreur malloc*/
@@ -29,12 +29,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(my_dog);
 		return (NULL);
 	}
-	/*enregistrement d'une copie en mémoire*/
+	/*enregistrement d'une copie en mémoire
 	for (i = 0; i < (int) sizeof(dog_t); i++)
 	{
-		*(name + i) = *name;
-		*(owner + i) = *owner;
-	}
+		(*my_dog).name[i] = name[i];
+		(*my_dog).owner[i] = owner[i];
+	}*/
 	return (my_dog);
-	free(my_dog);
 }
