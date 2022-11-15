@@ -29,11 +29,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(my_dog);
 		return (NULL);
 	}
-	/*enregistrement d'une copie en mémoire
-	for (i = 0; i < (int) sizeof(dog_t); i++)
-	{
-		(*my_dog).name[i] = name[i];
-		(*my_dog).owner[i] = owner[i];
-	}*/
+	/**
+	 * enregistrement d'une copie en mémoire
+	 *for (i = 0; i < (int) sizeof(dog_t); i++)
+	 *{
+	 *	(*my_dog).name[i] = name[i];
+	 *	(*my_dog).owner[i] = owner[i];
+	 *}
+	 */
 	return (my_dog);
 }
