@@ -8,13 +8,14 @@
  * @x: value
  *
  * Return: result
- */
-int abs(int x)
+ 
+int ABS(int x)
 {
 	int result;
 
 	result = ABS(x);
 	return (result);
 }
+*/
 
 #endif /*_MACRO_ */
