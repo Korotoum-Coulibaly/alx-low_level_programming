@@ -13,7 +13,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int i, sizeA, j, sizeS, status;
+	int i, sizeA, j, sizeS, status = 0;
 
 	sizeA = strlen(accept);
 	sizeS = strlen(s);
@@ -35,6 +35,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
+		status = 0;
 	}
 	return (count);
 }
