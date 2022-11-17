@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h>
+#include <string.h>
 
 /**
  * _strspn - function that gets the length of a prefix substring
@@ -10,13 +10,13 @@
  * Return: the number of bytes in the initial segment 
  * of s which consist only of bytes from accept
  */
-unisgned int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int compteur = 0;
 	int i, sizeA, j, sizeS;
 
-	sizeA = strlen(*accept);
-	sizeS = strlen(*s);
+	sizeA = strlen(accept);
+	sizeS = strlen(s);
 
 	for (i = 0; i < sizeA; i++)
 	{
