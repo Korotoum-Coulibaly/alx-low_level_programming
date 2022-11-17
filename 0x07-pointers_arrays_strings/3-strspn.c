@@ -13,7 +13,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int i, sizeA, j, sizeS;
+	int i, sizeA, j, sizeS, status;
 
 	sizeA = strlen(accept);
 	sizeS = strlen(s);
@@ -25,11 +25,13 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; j < sizeS; j++)
 		{
 			/*browse array copy to verified if element are not repeat*/
-
+			if (status != 0)
+				break;
 			/*if element is not repeat increment count*/
-			if (*(accept + i) == *(s + j))
+			else if (*(accept + i) == *(s + j))
 			{
 				count++;
+				status = 1;
 				break;
 			}
 		}
