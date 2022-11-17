@@ -14,7 +14,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j, e, sizeS, sizeA, status;
-	char *espace = NULL;
+	char *espace = " ";
 
 	sizeS = strlen(s);
 	sizeA = strlen(accept);
