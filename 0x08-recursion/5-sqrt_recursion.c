@@ -15,5 +15,8 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 1)
 		return (1);
-	return ((_sqrt_recursion(n + 1) + (n / _sqrt_recursion(n + 1))) / 2);
+	/**
+	 * incorrecte , voir la methode de héron ou autres
+	 */
+	return ((_sqrt_recursion(n) + (n / _sqrt_recursion(n))) / 2);
 }
