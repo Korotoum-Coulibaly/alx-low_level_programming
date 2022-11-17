@@ -30,7 +30,7 @@ char *_strpbrk(char *s, char *accept)
 		if (status == 1)
 			break;
 	}
-	if (accept == NULL || s == NULL)
+	if (*accept == NULL || *s == NULL)
 		return (NULL);
 
 	return (s + e);
