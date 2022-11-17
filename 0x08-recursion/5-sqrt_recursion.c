@@ -23,10 +23,10 @@ int _sqrt_recursion(int n)
  */
 int square(int a, int n)
 {
-	if ((a * a) == b)
+	if ((a * a) == n)
 		return (a);
-	if ((a * a) > b)
+	if ((a * a) > n)
 		return (-1);
 
-	return (check((a + 1), b));
+	return (check((a + 1), n));
 }
