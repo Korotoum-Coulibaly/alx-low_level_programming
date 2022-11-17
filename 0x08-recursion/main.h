@@ -10,4 +10,8 @@ int factorial(int n);
 int _sqrt_recursion(int n);
 int _is_prime_number(int n);
 int prime(int a, int n);
+int _strlen_recursion(char *s);
+int pal_checker(char *s, int i, int j);
+int is_palindrome(char *s);
+
 #endif /* _MAIN_H */
