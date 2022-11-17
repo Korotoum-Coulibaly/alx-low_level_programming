@@ -19,10 +19,10 @@ unsigned int _strspn(char *s, char *accept)
 	sizeS = strlen(s);
 	
 	/* browse array accept*/
-	for (i = 0; i < sizeA; i++)
+	for (i = 0; i < sizeS; i++)
 	{
 		/* browse array s or text enter*/
-		for (j = 0; j < sizeS; j++)
+		for (j = 0; j < sizeA; j++)
 		{
 			/*browse array copy to verified if element are not repeat*/
 			if (status != 0)
