@@ -23,7 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; j < sizeS; j++)
 		{
 			if (*(accept + i) == *(s + j))
+			{
 				compteur++;
+				break;
+			}
 		}
 	}
 	return (compteur);
