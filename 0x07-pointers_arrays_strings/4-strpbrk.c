@@ -24,13 +24,11 @@ char *_strpbrk(char *s, char *accept)
 			if (*(s + i) == *(accept + i))
 			{
 				status = 1;
-				e = i;
+				e = i - 1;
 			}
 		}
 		if (status == 1)
 			break;
 	}
-	for (i = e; i < sizeS; i++)
-		printf("%s\n", s + i);
 	return (s + e);
 }
