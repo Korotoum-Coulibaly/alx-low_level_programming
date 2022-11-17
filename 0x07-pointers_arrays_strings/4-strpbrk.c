@@ -14,7 +14,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j, e, sizeS, sizeA, status;
-	char *espace = " ";
+	char *espace = NULL;
 
 	sizeS = strlen(s);
 	sizeA = strlen(accept);
@@ -22,7 +22,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (j = 0; j < sizeA; j++)
 		{
-			if ((*(s + i) == *(accept + i)) || (*(s + i) != *espace))
+			if ((*(s + i) == *(accept + i)) && (*(s + i) != *espace))
 			{
 				status = 1;
 				e = i - 1;
