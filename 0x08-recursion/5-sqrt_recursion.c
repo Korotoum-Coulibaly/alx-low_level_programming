@@ -11,12 +11,22 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	if (n < 0)
+	return (square(1, n));
+}
+
+/**
+ * square - function that give square
+ * @a: value 1
+ * @n: number that square
+ *
+ * Return: int
+ */
+int square(int a, int n)
+{
+	if ((a * a) == b)
+		return (a);
+	if ((a * a) > b)
 		return (-1);
-	if (n == 1)
-		return (1);
-	/**
-	 * incorrecte , voir la methode de héron ou autres
-	 */
-	return ((_sqrt_recursion(n) + (n / _sqrt_recursion(n))) / 2);
+
+	return (check((a + 1), b));
 }
