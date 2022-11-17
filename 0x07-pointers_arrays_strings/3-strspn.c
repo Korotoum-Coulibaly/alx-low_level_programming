@@ -17,12 +17,11 @@ unsigned int _strspn(char *s, char *accept)
 
 	sizeA = strlen(accept);
 	sizeS = strlen(s);
-	
 	/* browse array accept*/
-	for (i = 0; i < sizeS; i++)
+	for (i = 0; i < sizeA; i++)
 	{
 		/* browse array s or text enter*/
-		for (j = 0; j < sizeA; j++)
+		for (j = 0; j < sizeS; j++)
 		{
 			/*browse array copy to verified if element are not repeat*/
 			if (status != 0)
