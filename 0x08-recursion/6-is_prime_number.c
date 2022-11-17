@@ -4,7 +4,7 @@
  * is_prime_number - function that returns 1 if the input
  * integer is a prime number, otherwise return 0
  *@n: value
-
+ *
  * Return: 1 or 0
  */
 int is_prime_number(int n)
@@ -13,7 +13,7 @@ int is_prime_number(int n)
 	if (n == 2)
 		return (1);
 	/*prime is a function that search prime number*/
-	return (prime(2,n));
+	return (prime(2, n));
 
 }
 
