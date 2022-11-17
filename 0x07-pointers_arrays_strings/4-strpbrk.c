@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strpbrk - function that searches a string for 
+ * _strpbrk - function that searches a string for
  * any of a set of bytes
  * @s: text
  * @accept: accept list
@@ -13,7 +13,8 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, e, sizeS, sizeA, status; 
+	int i, j, e, sizeS, sizeA, status;
+	char *espace = " ";
 
 	sizeS = strlen(s);
 	sizeA = strlen(accept);
@@ -21,7 +22,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (j = 0; j < sizeA; j++)
 		{
-			if (*(s + i) == *(accept + i))
+			if ((*(s + i) == *(accept + i)) && (*(s + i)!= *espace))
 			{
 				status = 1;
 				e = i - 1;
