@@ -22,7 +22,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (j = 0; j < sizeA; j++)
 		{
-			if ((*(s + i) == *(accept + i)) && (*(s + i) != *espace))
+			if ((*(s + i) == *(accept + i)) || (*(s + i) != *espace))
 			{
 				status = 1;
 				e = i - 1;
