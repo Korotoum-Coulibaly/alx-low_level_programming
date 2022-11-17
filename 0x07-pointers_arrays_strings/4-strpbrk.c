@@ -31,7 +31,7 @@ char *_strpbrk(char *s, char *accept)
 			break;
 	}
 	if (accept == NULL || s == NULL)
-		printf("nil");
+		return (NULL);
 
 	return (s + e);
 }
