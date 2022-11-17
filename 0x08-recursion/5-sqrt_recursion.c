@@ -28,5 +28,5 @@ int square(int a, int n)
 	if ((a * a) > n)
 		return (-1);
 
-	return (check((a + 1), n));
+	return (square((a + 1), n));
 }
