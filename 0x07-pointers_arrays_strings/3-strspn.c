@@ -14,7 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
 	int i, sizeA, j, sizeS, k, status;
-	char *copy = malloc(sizeof(char));
+	char *copy = malloc(sizeof(char) * sizeA);
 
 	sizeA = strlen(accept);
 	sizeS = strlen(s);
