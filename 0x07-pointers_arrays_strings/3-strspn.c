@@ -13,30 +13,19 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int i, sizeA, j, sizeS, k, status;
-	char *copy = malloc(sizeof(char) * sizeA);
+	int i, sizeA, j, sizeS;
 
 	sizeA = strlen(accept);
 	sizeS = strlen(s);
 	
-	/* browe array accept*/
+	/* browse array accept*/
 	for (i = 0; i < sizeA; i++)
 	{
 		/* browse array s or text enter*/
 		for (j = 0; j < sizeS; j++)
 		{
 			/*browse array copy to verified if element are not repeat*/
-			for (k = 0; k < sizeA; k++)
-			{
-				if ((* accept + i) == *(copy + k))
-					status = 1;
-				else
-					*(copy + i) = *(accept + i);
-			}
 
-			/*stop to browse array s if element repeat*/
-			if (status == 1)
-				break;
 			/*if element is not repeat increment count*/
 			if (*(accept + i) == *(s + j))
 			{
@@ -45,6 +34,5 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 	}
-	free(copy);
 	return (count);
 }
