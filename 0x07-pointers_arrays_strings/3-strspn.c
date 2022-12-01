@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 			/* browse array s or text enter*/
 			for (j = 0; j < sizeS; j++)
 			{
-				if (*(accept + i) == *(s + j))
+				if (*(accept + j) == *(s + i))
 				{
 					count++;
 				}
