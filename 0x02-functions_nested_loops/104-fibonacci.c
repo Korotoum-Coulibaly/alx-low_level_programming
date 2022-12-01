@@ -11,10 +11,10 @@
 int main(void)
 {
 	int count;
-	unsigned int value1 = 0, value2 = 1, valuesum;
-	unsigned int value1_half1, value1_half2;
-	unsigned int value2_half1, value2_half2;
-	unsigned int half1, half2;
+	unsigned long value1 = 0, value2 = 1, valuesum;
+	unsigned long value1_half1, value1_half2;
+	unsigned long value2_half1, value2_half2;
+	unsigned long half1, half2;
 
 	for (count = 0; count < 92; count++)
 	{
@@ -38,7 +38,7 @@ int main(void)
 			half1 += 1;
 			half2 %= 10000000000;
 		}
-		printf("%u%u", half1, half2);
+		printf("%lu%lu", half1, half2);
 		if (count != 98)
 			printf(", ");
 
