@@ -13,17 +13,14 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int i, sizeA, j, sizeS;
-
-	sizeA = strlen(accept);
-	sizeS = strlen(s);
+	int i, j;
 	/* browse array accept*/
-	for (i = 0; i < sizeA; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (sizeA != 32)
+		if (*(s + i) != 32)
 		{
 			/* browse array s or text enter*/
-			for (j = 0; j < sizeS; j++)
+			for (j = 0; *(accept + j) != '\0'; j++)
 			{
 				if (*(accept + j) == *(s + i))
 				{
