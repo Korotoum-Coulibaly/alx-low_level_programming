@@ -231,59 +231,18 @@ int add(int n,int m)
  */
 void print_to_98(int n)
 {
-	int p;
-
-	for (p = n; p <= 98; p++)
+	if (n >= 98)
 	{
-		if (p > 9)
-		{
-			_putchar ('0' + p / 10);
-			_putchar ('0' + p % 10);
-		}
-		if (p < 10 && p != 0 && p > -10)
-			_putchar ('0' + p);
-		if (p == 0)
-			_putchar ('0');
-		if (p != 98)
-		{
-			_putchar (',');
-			_putchar (' ');
-		}
-		if (p < -99)
-		{
-			_putchar ('0' + (-p) / 100);
-			_putchar ('0' + ((-p) / 10) % 10);
-			_putchar ('0' + (-p) % 10);
-		}
-		if (p <= -10 && p >= -99)
-		{
-			_putchar ('0' + (-p) / 10);
-			_putchar ('0' + (-p) % 10);
-		}
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
 	}
-	if (n > 99)
+	else
 	{
-		for (p = n; p >= 98; p--)
-		{
-			if (p > 99)
-			{
-				_putchar ('0' + p / 100);
-				_putchar ('0' + (p / 10) % 10);
-				_putchar ('0' + p % 10);
-			}
-			if (p <= 99)
-			{
-				_putchar ('0' + p / 10);
-				_putchar ('0' + p % 10);
-			}
-			if (p != 98)
-			{
-				_putchar (',');
-				_putchar (' ');
-			}
-		}
+		while (n < 98)
+			printf("%d, ", n++);
+		printf("%d\n", n);
 	}
-	_putchar ('\n');
 }
 /**
  * print_times_table - that prints the n times table,starting with 0
