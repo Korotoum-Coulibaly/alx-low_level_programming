@@ -13,28 +13,18 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, e, sizeS, sizeA, status;
-	char *espace = " ";
+	int i;
 
-	sizeS = strlen(s);
-	sizeA = strlen(accept);
-	for (i = 0; i < sizeS; i++)
+	while (*s)
 	{
-		for (j = 0; j < sizeA; j++)
+		for (i = 0; *(accept + i); i++)
 		{
-			if ((*(s + i) == *(accept + i)) && (*(s + i) != *espace))
+			if (*s == *(accept + i))
 			{
-				status = 1;
-				e = i - 1;
+				return (s);
 			}
 		}
-		if (status == 1)
-			break;
+		s++;
 	}
-	if (!*accept || !*s)
-		return (NULL);
-	if (e == 0)
-		return (NULL);
-
-	return (s + e);
+	return (NULL);
 }
