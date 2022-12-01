@@ -10,16 +10,25 @@
 int main(void)
 {
 	int count;
-       unsigned long i, j, m;
+	unsigned long i, j, m;
 
 	i = 1;
 	j = 2;
 	for (count = 1; count <= 50; count++)
 	{
 		if (count == 1)
+		{
 			putchar ('0' + i);
+			putchar (',');
+			putchar (' ');
+		}
+
 		if (count == 2)
+		{
 			putchar ('0' + j);
+			putchar (',');
+			putchar (' ');
+		}
 		if (count != 1 && count != 2)
 		{
 			m = i + j;
