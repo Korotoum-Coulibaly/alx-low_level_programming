@@ -26,8 +26,6 @@ int main(void)
 		if (count == 2)
 		{
 			putchar ('0' + j);
-			putchar (',');
-			putchar (' ');
 		}
 		if (count != 1 && count != 2)
 		{
