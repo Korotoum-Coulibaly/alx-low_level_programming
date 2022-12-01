@@ -14,7 +14,7 @@ int main(void)
 	unsigned int value1 = 0, value2 = 1, valuesum;
 	unsigned int value1_half1, value1_half2;
 	unsigned int value2_half1, value2_half2;
-	unsigned int half_1, half_2;
+	unsigned int half1, half2;
 
 	for (count = 0; count < 92; count++)
 	{
