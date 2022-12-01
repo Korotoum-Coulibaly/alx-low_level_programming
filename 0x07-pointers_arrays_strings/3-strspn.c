@@ -13,28 +13,26 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int i, sizeA, j, sizeS, status = 0;
+	int i, sizeA, j, sizeS;
 
 	sizeA = strlen(accept);
 	sizeS = strlen(s);
 	/* browse array accept*/
 	for (i = 0; i < sizeA; i++)
 	{
-		/* browse array s or text enter*/
-		for (j = 0; j < sizeS; j++)
+		if (sizeA != 32)
 		{
-			/*browse array copy to verified if element are not repeat*/
-			if (status != 0)
-				break;
-			/*if element is not repeat increment count*/
-			else if (*(accept + i) == *(s + j))
+			/* browse array s or text enter*/
+			for (j = 0; j < sizeS; j++)
 			{
-				count++;
-				status = 1;
-				break;
+				if (*(accept + i) == *(s + j))
+				{
+					count++;
+				}
 			}
 		}
-		status = 0;
+		else
+			return (count);
 	}
 	return (count);
 }
