@@ -19,7 +19,7 @@ int main(void)
 	for (count = 0; count < 92; count++)
 	{
 		valuesum = value1 + value2;
-		printf("%1u, ", valuesum);
+		printf("%u, ", valuesum);
 
 		value1 = value2;
 		value2 = valuesum;
@@ -38,7 +38,7 @@ int main(void)
 			half1 += 1;
 			half2 %= 10000000000;
 		}
-		printf("%lu%lu", half1, half2);
+		printf("%u%u", half1, half2);
 		if (count != 98)
 			printf(", ");
 
