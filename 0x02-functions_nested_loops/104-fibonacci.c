@@ -19,7 +19,7 @@ int main(void)
 	for (count = 0; count < 92; count++)
 	{
 		valuesum = value1 + value2;
-		printf("%u, ", valuesum);
+		printf("%lu, ", valuesum);
 
 		value1 = value2;
 		value2 = valuesum;
