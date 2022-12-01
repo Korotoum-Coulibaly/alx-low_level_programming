@@ -25,7 +25,7 @@ int main(void)
 			m = i + j;
 			putchar (',');
 			putchar (' ');
-			printf("%d", m);
+			printf("%lu", m);
 			i = j;
 			j = m;
 		}
