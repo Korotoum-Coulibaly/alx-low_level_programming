@@ -33,7 +33,7 @@ int main(void)
 	{
 		half1 = value1_half1 + value2_half1;
 		half2 = value1_half2 + value2_half2;
-		if (value1_half2 + value2_half2 > 9999999999)
+		if ((value1_half2 + value2_half2) > 9999999999)
 		{
 			half1 += 1;
 			half2 %= 10000000000;
