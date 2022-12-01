@@ -9,7 +9,8 @@
  */
 int main(void)
 {
-	int count, i, j, m;
+	int count;
+       unsigned long i, j, m;
 
 	i = 1;
 	j = 2;
