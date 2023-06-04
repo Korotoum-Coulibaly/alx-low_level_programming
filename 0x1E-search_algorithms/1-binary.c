@@ -3,9 +3,9 @@
 /**
  * print - prints number seperated with comma
  * @array: a pointer to the array to print
- * @first: the first index 
- * @last: the last index 
- * Return: the values 
+ * @first: the first index
+ * @last: the last index
+ * Return: the values
  */
 
 void print(int *array, size_t first, size_t last)
@@ -24,7 +24,7 @@ void print(int *array, size_t first, size_t last)
 
 
 /**
- * binary_search - function that searches for a value in a sorted 
+ * binary_search - function that searches for a value in a sorted
  * array of integers using the Binary search algorithms
  * @array: in array that is a pointer to the first element of the array
  * @size: input size of elements in array
@@ -52,6 +52,5 @@ int binary_search(int *array, size_t size, int value)
 				return (c);
 		}
 	}
-
 	return (-1);
 }
