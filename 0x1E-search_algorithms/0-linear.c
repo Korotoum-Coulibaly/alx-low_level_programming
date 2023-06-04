@@ -5,7 +5,7 @@
  * integers using the linear search algorithm
  * @array: in array that is a pointer to the first element of the array
  * @size: input size of elements in array
- * value: is th value to search
+ * @value: is th value to search
  * Return: Null or -1 or value index
  */
 
